@@ -78,10 +78,6 @@ class DoublyLinkedList<T extends Comparable<T>>
      * Tests if the doubly linked list is empty
      * @return true if list is empty, and false otherwise
      *
-     * Worst-case asymptotic runtime cost: Theta(1)
-     *
-     * Justification:
-     *  runtime is constant as no loops are involved and there is a direct path from start to finish
      */
     public boolean isEmpty()
     {
@@ -101,10 +97,6 @@ class DoublyLinkedList<T extends Comparable<T>>
      * @param data : The new data of class T that needs to be added to the list
      * @return none
      *
-     * Worst-case asymptotic runtime cost: Theta(n)
-     *
-     * Justification:
-     *  In the worst case scenario the program may have to iterate over the while loop n number of times before finish (no nested loops though)
      */
     public void insertBefore( int pos, T data ) 
     {
@@ -179,10 +171,6 @@ class DoublyLinkedList<T extends Comparable<T>>
      * @param pos : the position
      * @return the data at pos, if pos is within the bounds of the list, and null otherwise.
      *
-     * Worst-case asymptotic runtime cost: Theta(1)
-     *
-     * Justification:
-     *  Straight path from start to finish - no loops
      */
     public T get(int pos) 
     {
@@ -212,10 +200,6 @@ class DoublyLinkedList<T extends Comparable<T>>
      * @param pos : the position to delete in the list.
      * @return true : on successful deletion, false : list has not been modified. 
      *
-     * Worst-case asymptotic runtime cost: Theta(n)
-     *
-     * Justification:
-     *  In the worst case program may have to iterate over while loop n times to get desired result
      */
     public boolean deleteAt(int pos) 
     {
@@ -271,10 +255,6 @@ class DoublyLinkedList<T extends Comparable<T>>
      * If the list contains "A", "B", "C", "D" before the method is called
      * Then it should contain "D", "C", "B", "A" after it returns.
      *
-     * Worst-case asymptotic runtime cost: Theta(n)
-     *
-     * Justification:
-     *   In the worst case program may have to iterate over while loop n times to get desired result
      */
     public void reverse()
     {
@@ -306,10 +286,6 @@ class DoublyLinkedList<T extends Comparable<T>>
      * How exactly this will be represented in the Doubly Linked List is up to the programmer.
      * @param item : the item to push on the stack
      *
-     * Worst-case asymptotic runtime cost: Theta(1)
-     *
-     * Justification:
-     *  Straight path from start to finish of program - no loops
      */
     public void push(T item) 
     {
@@ -325,10 +301,6 @@ class DoublyLinkedList<T extends Comparable<T>>
      * How exactly this will be represented in the Doubly Linked List is up to the programmer.
      * @return the last item inserted with a push; or null when the list is empty.
      *
-     * Worst-case asymptotic runtime cost: Theta(1)
-     *
-     * Justification:
-     *  Straight path from start to finish of program - no loops
      */
     public T pop() 
     {
@@ -352,10 +324,6 @@ class DoublyLinkedList<T extends Comparable<T>>
      * How exactly this will be represented in the Doubly Linked List is up to the programmer.
      * @param item : the item to be enqueued to the stack
      *
-     * Worst-case asymptotic runtime cost: Theta(1)
-     *
-     * Justification:
-     *  Straight path from start to finish of program - no loops
      */
     public void enqueue(T item) 
     {
@@ -368,10 +336,6 @@ class DoublyLinkedList<T extends Comparable<T>>
      * How exactly this will be represented in the Doubly Linked List is up to the programmer.
      * @return the earliest item inserted with a push; or null when the list is empty.
      *
-     * Worst-case asymptotic runtime cost: Theta(1)
-     *
-     * Justification:
-     *  Straight line from start to finish of program - no loops to elongate worst case run time
      */
     public T dequeue() 
     {
