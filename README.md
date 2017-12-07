@@ -1,2 +1,2 @@
 # Doubly-Linked-List
-Creation of a Doubly Linked List class along with JUnit testing for it
+Doubly Linked List implementation along with JUnit testing for all of the code.
